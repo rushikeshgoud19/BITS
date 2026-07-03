@@ -1,0 +1,15 @@
+Secure Project Workspace Setup Report
+
+1. Directory Structure Created: 
+   - project_workspace/
+     - docs/
+     - code/
+2. Umask Value: 0002
+3. File Permissions:
+   - Initial permissions for docs/design.txt: -rw-rw-r-- (664)
+   - Modified permissions for code directory: drwx------ (700)
+4. Ownership Details: 
+   - Owned by user: rushikesh
+   - Owned by group: rushikesh
+5. Security Explanation:
+   Setting the 'code' directory to 700 ensures that only the owner has read, write, and execute permissions, protecting sensitive source code from other users on the system. The umask of 0002 ensures that newly created files give read/write access to the owner and group, but only read access to others.

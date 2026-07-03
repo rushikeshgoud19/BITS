@@ -1,0 +1,10 @@
+File Access and I/O Investigation Report
+
+1. Output Redirection Results: 
+   - Standard output (stdout) was redirected to standard_out.txt using the '>' operator. Because the 'ls' command failed, this file remained empty.
+   - Standard error (stderr) was redirected to error_out.txt using the '2>' operator, successfully capturing the "No such file or directory" error message instead of displaying it on the terminal.
+2. Resource Limits Observed: 
+   - Using 'ulimit -a', I observed system resource limits for the user 'rushikesh'. 
+   - Notable limits include a maximum of 1024 open files (-n) and 14832 max user processes (-u). File sizes (-f) and virtual memory (-v) are set to unlimited.
+3. Linux I/O Management Explanation: 
+   - Linux manages input/output by treating streams as file descriptors. FD 1 is standard output and FD 2 is standard error. By using redirection operators, users can independently route these streams to separate files for logging and error handling.

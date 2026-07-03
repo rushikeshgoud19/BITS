@@ -1,0 +1,12 @@
+File System and Link Analysis Report
+
+1. Inode Numbers:
+   - original_file.txt: 3932608
+   - hard_link.txt: 3932608
+   - sym_link.txt: 3932609
+2. Comparison (Hard Link vs. Symbolic Link):
+   - The hard link points directly to the same underlying inode (3932608) as the original file, acting as an exact physical mirror of the data.
+   - The symbolic link acts as a shortcut, pointing to the original file's path rather than its inode, therefore receiving its own unique inode (3932609).
+3. Effect of Deletion:
+   - When original_file.txt was deleted, hard_link.txt retained the data ("Hello Linux") because the underlying inode still had one link referencing it.
+   - sym_link.txt became broken/dangling and threw a "No such file or directory" error because the file path it pointed to was removed.

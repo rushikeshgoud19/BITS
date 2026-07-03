@@ -1,0 +1,8 @@
+Linux Environment Verification Report
+
+1. Username: rushikesh
+2. Groups associated: rushikesh, users
+3. Current Shell: /bin/bash
+4. Current Working Directory: /home/rushikesh
+5. Files and Directories in workspace: Desktop, Documents, Downloads, Music, Pictures, Projects, Public, Templates, Videos
+6. Network Connectivity: Verified. Sent 4 packets to google.com with 0% packet loss.
